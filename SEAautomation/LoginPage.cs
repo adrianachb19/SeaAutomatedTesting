@@ -1,0 +1,71 @@
+﻿using OpenQA.Selenium;
+using OpenQA.Selenium.Chrome;
+using SeaCoupon;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace SEAautomation
+{
+   public class LoginPage
+    {
+
+        public static void GoTo()
+        {
+           
+            Driver.Instance.Navigate().GoToUrl("https://sea-offer-portal.herokuapp.com/login");
+        }
+
+        public static LoginCommand LoginAs(string userName)
+        {
+            return new LoginCommand(userName);
+        }
+
+        public static bool IsLogin
+        {
+            get
+            {
+                return Elements.ElementDisplayedByXPath(
+                    "/html/body/sea-app/offer-landing/tabs/tab[1]/div/offer-search/div/div/div[2]/h3");
+            }
+        }
+
+        
+    }
+
+    public class LoginCommand
+    {
+        private readonly string userName;
+        private string password;
+        public LoginCommand(string userName)
+        {
+            this.userName = userName;
+        }
+
+        public LoginCommand WithPassword(string password)
+        {
+            this.password = password;
+            return this;
+        }
+
+
+        public void Login()
+        {
+            var loginInput = Driver.Instance.FindElement(By.Id("username"));
+            loginInput.SendKeys(userName);
+
+            var passwordInput = Driver.Instance.FindElement(By.Id("password"));
+            passwordInput.SendKeys(password);
+
+            var loginButton = Driver.Instance.FindElement(By.CssSelector(".btn.btn-primary"));
+            loginButton.Click();
+        }
+
+       
+
+
+
+    }
+}

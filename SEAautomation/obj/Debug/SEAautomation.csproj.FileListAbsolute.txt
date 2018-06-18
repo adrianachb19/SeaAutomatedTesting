@@ -1,0 +1,27 @@
+C:\Users\ADRI\Desktop\Creating an Automated Testing Framework With Selenium\SEAautomation\SEAautomation\bin\Debug\SEAautomation.dll
+C:\Users\ADRI\Desktop\Creating an Automated Testing Framework With Selenium\SEAautomation\SEAautomation\bin\Debug\SEAautomation.pdb
+C:\Users\ADRI\Desktop\Creating an Automated Testing Framework With Selenium\SEAautomation\SEAautomation\bin\Debug\WebDriver.dll
+C:\Users\ADRI\Desktop\Creating an Automated Testing Framework With Selenium\SEAautomation\SEAautomation\bin\Debug\WebDriver.Support.dll
+C:\Users\ADRI\Desktop\Creating an Automated Testing Framework With Selenium\SEAautomation\SEAautomation\bin\Debug\WebDriver.xml
+C:\Users\ADRI\Desktop\Creating an Automated Testing Framework With Selenium\SEAautomation\SEAautomation\bin\Debug\WebDriver.Support.xml
+C:\Users\ADRI\Desktop\Creating an Automated Testing Framework With Selenium\SEAautomation\SEAautomation\obj\Debug\SEAautomation.csprojResolveAssemblyReference.cache
+C:\Users\ADRI\Desktop\Creating an Automated Testing Framework With Selenium\SEAautomation\SEAautomation\obj\Debug\SEAautomation.dll
+C:\Users\ADRI\Desktop\Creating an Automated Testing Framework With Selenium\SEAautomation\SEAautomation\obj\Debug\SEAautomation.pdb
+C:\Users\ADRI\Desktop\Automated Testing Tabs-Testing\SEAautomation\SEAautomation\bin\Debug\SEAautomation.dll
+C:\Users\ADRI\Desktop\Automated Testing Tabs-Testing\SEAautomation\SEAautomation\bin\Debug\SEAautomation.pdb
+C:\Users\ADRI\Desktop\Automated Testing Tabs-Testing\SEAautomation\SEAautomation\bin\Debug\WebDriver.dll
+C:\Users\ADRI\Desktop\Automated Testing Tabs-Testing\SEAautomation\SEAautomation\bin\Debug\WebDriver.Support.dll
+C:\Users\ADRI\Desktop\Automated Testing Tabs-Testing\SEAautomation\SEAautomation\bin\Debug\WebDriver.xml
+C:\Users\ADRI\Desktop\Automated Testing Tabs-Testing\SEAautomation\SEAautomation\bin\Debug\WebDriver.Support.xml
+C:\Users\ADRI\Desktop\Automated Testing Tabs-Testing\SEAautomation\SEAautomation\obj\Debug\SEAautomation.csprojResolveAssemblyReference.cache
+C:\Users\ADRI\Desktop\Automated Testing Tabs-Testing\SEAautomation\SEAautomation\obj\Debug\SEAautomation.dll
+C:\Users\ADRI\Desktop\Automated Testing Tabs-Testing\SEAautomation\SEAautomation\obj\Debug\SEAautomation.pdb
+C:\Users\ADRI\Desktop\SEA-Test\SEAautomation\SEAautomation\bin\Debug\SEAautomation.dll
+C:\Users\ADRI\Desktop\SEA-Test\SEAautomation\SEAautomation\bin\Debug\SEAautomation.pdb
+C:\Users\ADRI\Desktop\SEA-Test\SEAautomation\SEAautomation\bin\Debug\WebDriver.dll
+C:\Users\ADRI\Desktop\SEA-Test\SEAautomation\SEAautomation\bin\Debug\WebDriver.Support.dll
+C:\Users\ADRI\Desktop\SEA-Test\SEAautomation\SEAautomation\bin\Debug\WebDriver.xml
+C:\Users\ADRI\Desktop\SEA-Test\SEAautomation\SEAautomation\bin\Debug\WebDriver.Support.xml
+C:\Users\ADRI\Desktop\SEA-Test\SEAautomation\SEAautomation\obj\Debug\SEAautomation.csprojResolveAssemblyReference.cache
+C:\Users\ADRI\Desktop\SEA-Test\SEAautomation\SEAautomation\obj\Debug\SEAautomation.dll
+C:\Users\ADRI\Desktop\SEA-Test\SEAautomation\SEAautomation\obj\Debug\SEAautomation.pdb
