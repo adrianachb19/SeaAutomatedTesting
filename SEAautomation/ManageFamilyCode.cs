@@ -48,6 +48,7 @@ namespace SEAautomation
        {
            Elements.Delay(5000);
            Elements.ClickElementByXPath("/html/body/sea-app/offer-landing/tabs/tab[6]/div/family-code-manager/div/div[2]/div/a");
+           Elements.Delay(5000);
        }
 
        public static bool IsAddNewFamilyCode
@@ -57,6 +58,34 @@ namespace SEAautomation
                return Elements.ElementDisplayedCssSelector(
                    "body > bs-modal.fade.modal.in > div > div > bs-modal-header > div > h4");
            }
+       }
+
+
+
+       public static void SelectGS1Prefix()
+       {
+           Elements.Delay(3000);
+           Elements.ClickElementByXPath("//*[@id='gs1codeDropdownButton']");
+           Elements.Delay(3000);
+           Elements.ClickElementByXPath("/html/body/bs-modal[2]/div/div/bs-modal-body/div/div/div[1]/div/div/ul/li[1]/a");
+           Elements.FindButton();
+       }
+
+
+
+       public static bool IsSelectGSIPrefix()
+       {
+           var findTag = Driver.Instance.FindElements(By.TagName("button"));
+           var a = findTag[21].Text;
+           Console.WriteLine(a);
+           return a == "000000000000";
+       }
+
+
+       public static bool IsGs1PrefixDescription()
+       {
+           return Elements.ElementEnabledByXPath("/html/body/bs-modal[2]/div/div/bs-modal-body/div/div/div[2]/input");
+
        }
     }
 }

@@ -90,27 +90,6 @@ namespace SeaCoupon
             return element;
         }
 
-        public static bool ElementDisplayedById(string id)
-        {
-            if (Driver.Instance.FindElement(By.Id(id)).Displayed)
-                return true;
-            return false;
-        }
-
-        public static bool ElementDisplayedByXPath(string xPath)
-        {
-            if (Driver.Instance.FindElement(By.XPath(xPath)).Displayed)
-                return true;
-            return false;
-        }
-
-        public static bool ElementDisplayedCssSelector(string cssSelector)
-        {
-            if (Driver.Instance.FindElement(By.CssSelector(cssSelector)).Displayed)
-                return true;
-            return false;
-        }
-
         public static void FindButton()
        {
            var c = Driver.Instance.FindElements(By.TagName("button"));
@@ -157,30 +136,72 @@ namespace SeaCoupon
 
             return a == "El nombre del equipo no debe contener caracteres especiales o números";
         }
+      
+        // metodo para verificar si esta habilitado ( assert)
+        public static bool ElementEnabledByXPath(string xPath)
+        {
+            if (Driver.Instance.FindElement(By.XPath(xPath)).Enabled)
+                return true;
+            return false;
+        }
+
+        public static bool ElementEnabledCssSelector(string cssSelector)
+        {
+            if (Driver.Instance.FindElement(By.CssSelector(cssSelector)).Enabled)
+                return true;
+            return false;
+        }
+
+        public static bool ElementEnabledById(string id)
+        {
+            if (Driver.Instance.FindElement(By.Id(id)).Enabled)
+                return true;
+            return false;
+        }
 
         // metodo para verificar un check ( assert)
-        public static bool IsChecked()
+
+        public static bool ElementSelectedByXPath(string xPath)
         {
-            IWebElement TargetElement = Driver.Instance.FindElement(By.XPath("/html/body/bs-modal[2]/div/div/bs-modal-body/div/div[3]/div/div/label/input"));
-            string getValue = TargetElement.GetAttribute("value");
-            Console.WriteLine(getValue);
-            if (TargetElement.Selected)
+            if (Driver.Instance.FindElement(By.XPath(xPath)).Selected)
                 return true;
             return false;
         }
 
-        // metodo para verificar si esta habilitado ( assert)
-        public static bool Blockled()
+        public static bool ElementSelectedCssSelector(string cssSelector)
         {
-            IWebElement TargetElement = Driver.Instance.FindElement(By.XPath("/html/body/sea-app/offer-edit/div/main-offer-form/form/div[1]/div[2]/div/input"));
-            string getValue = TargetElement.GetAttribute("value");
-            Console.WriteLine(getValue);
-            if (TargetElement.Enabled)
+            if (Driver.Instance.FindElement(By.CssSelector(cssSelector)).Selected)
                 return true;
             return false;
         }
 
-        
-        
+        public static bool ElementSelectedById(string id)
+        {
+            if (Driver.Instance.FindElement(By.Id(id)).Selected)
+                return true;
+            return false;
+        }
+
+        // metodo para verificar que esta desplegado ( assert)
+        public static bool ElementDisplayedById(string id)
+        {
+            if (Driver.Instance.FindElement(By.Id(id)).Displayed)
+                return true;
+            return false;
+        }
+
+        public static bool ElementDisplayedByXPath(string xPath)
+        {
+            if (Driver.Instance.FindElement(By.XPath(xPath)).Displayed)
+                return true;
+            return false;
+        }
+
+        public static bool ElementDisplayedCssSelector(string cssSelector)
+        {
+            if (Driver.Instance.FindElement(By.CssSelector(cssSelector)).Displayed)
+                return true;
+            return false;
+        }
     }
 }

@@ -21,7 +21,11 @@ namespace SEAtest
             ManageFamilyCode.GoToManageCode();
             Assert.IsTrue(ManageFamilyCode.IsManageFamilyCode, "Failed to Manage Family Code");
             ManageFamilyCode.AddNewFamilyCode();
-            Assert.IsTrue(ManageFamilyCode.IsAddNewFamilyCode(), "Failed to IsAddNewFamilyCode");
+            Assert.IsTrue(ManageFamilyCode.IsAddNewFamilyCode, "Failed to IsAddNewFamilyCode");
+            ManageFamilyCode.SelectGS1Prefix();
+            Assert.IsTrue(ManageFamilyCode.IsSelectGSIPrefix(), "Failed to IsSelectGSIPrefix");
+            Assert.IsFalse(ManageFamilyCode.IsGs1PrefixDescription(), "Failed to IsGs1PrefixDescription");
+           
 
         
         }

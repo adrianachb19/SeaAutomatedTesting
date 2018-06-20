@@ -31,3 +31,14 @@ C:\Users\ADRI\Desktop\SEA-Test\SEAautomation\SEAtest\bin\Debug\SEAautomation.pdb
 C:\Users\ADRI\Desktop\SEA-Test\SEAautomation\SEAtest\bin\Debug\WebDriver.xml
 C:\Users\ADRI\Desktop\SEA-Test\SEAautomation\SEAtest\bin\Debug\WebDriver.Support.xml
 C:\Users\ADRI\Desktop\SEA-Test\SEAautomation\SEAtest\obj\Debug\SEAtest.pdb
+C:\Users\ADRI\Desktop\SEA-Test\seatest\SEAtest\obj\Debug\SEAtest.csprojResolveAssemblyReference.cache
+C:\Users\ADRI\Desktop\SEA-Test\seatest\SEAtest\obj\Debug\SEAtest.dll
+C:\Users\ADRI\Desktop\SEA-Test\seatest\SEAtest\bin\Debug\SEAtest.dll
+C:\Users\ADRI\Desktop\SEA-Test\seatest\SEAtest\bin\Debug\SEAtest.pdb
+C:\Users\ADRI\Desktop\SEA-Test\seatest\SEAtest\bin\Debug\SEAautomation.dll
+C:\Users\ADRI\Desktop\SEA-Test\seatest\SEAtest\bin\Debug\WebDriver.dll
+C:\Users\ADRI\Desktop\SEA-Test\seatest\SEAtest\bin\Debug\WebDriver.Support.dll
+C:\Users\ADRI\Desktop\SEA-Test\seatest\SEAtest\bin\Debug\SEAautomation.pdb
+C:\Users\ADRI\Desktop\SEA-Test\seatest\SEAtest\bin\Debug\WebDriver.xml
+C:\Users\ADRI\Desktop\SEA-Test\seatest\SEAtest\bin\Debug\WebDriver.Support.xml
+C:\Users\ADRI\Desktop\SEA-Test\seatest\SEAtest\obj\Debug\SEAtest.pdb
