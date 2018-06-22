@@ -87,5 +87,46 @@ namespace SEAautomation
            return Elements.ElementEnabledByXPath("/html/body/bs-modal[2]/div/div/bs-modal-body/div/div/div[2]/input");
 
        }
+
+       public static void FamilyCode(string familyCode)
+       {
+           Elements.Delay(3000);
+           Elements.SendKeysByXPath("/html/body/bs-modal[2]/div/div/bs-modal-body/div/form/div/div[1]/input", familyCode);
+       }
+
+       public static bool IsFamilyCode()
+       {
+           IWebElement TargetElement = Driver.Instance.FindElement(By.XPath("/html/body/bs-modal[2]/div/div/bs-modal-body/div/form/div/div[1]/input"));
+           string getValue = TargetElement.GetAttribute("value");
+           Console.WriteLine(getValue);
+           return getValue == "003"; // texto que debe mostrar
+       }
+
+       public static void Description(string description)
+       {
+           Elements.Delay(3000);
+           Elements.SendKeysByXPath("/html/body/bs-modal[2]/div/div/bs-modal-body/div/form/div/div[2]/input", description);
+       }
+
+       public static bool IsDescription()
+       {
+           IWebElement TargetElement = Driver.Instance.FindElement(By.XPath("/html/body/bs-modal[2]/div/div/bs-modal-body/div/form/div/div[2]/input"));
+           string getValue = TargetElement.GetAttribute("value");
+           Console.WriteLine(getValue);
+           return getValue == "test"; // texto que debe mostrar
+       }
+
+       public static void ButtonOk()
+       {
+           Elements.Delay(3000);
+           Elements.ClickElementByXPath("/html/body/bs-modal[2]/div/div/bs-modal-footer/div/div/button[2]");
+       }
+
+
+       public static void NumberFamilyCode()
+       {
+           Elements.Delay(3000);
+           Elements.ClickElementByXPath("/html/body/sea-app/offer-landing/tabs/tab[6]/div/family-code-manager/div/div[3]/div/table/tbody/tr[5]/td[2]/a");
+       }
     }
 }
