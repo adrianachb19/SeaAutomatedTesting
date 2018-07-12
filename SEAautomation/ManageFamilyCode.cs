@@ -24,10 +24,10 @@ namespace SEAautomation
 
 
 
-       public static void GoToManageCode()
+       public static void GoToManageFamilyCode()
        {
            Elements.Delay(3000);
-           Elements.ClickElementByCssSelector("body > sea-app > offer-landing > tabs > ul > li:nth-child(6) > a");
+           Elements.ClickElementByCssSelector("body > sea-app > offer-landing > tabs > ul > li:nth-child(5) > a");
 
 
 
@@ -39,7 +39,7 @@ namespace SEAautomation
            get
            {
                return Elements.ElementDisplayedCssSelector(
-                   "body > sea-app > offer-landing > tabs > tab:nth-child(7) > div > family-code-manager > div > div:nth-child(1) > div > h3 ");
+                   "body > sea-app > offer-landing > tabs > tab:nth-child(6) > div > family-code-manager > div > div:nth-child(1) > div > h3");
            }       
        
        }
@@ -47,7 +47,7 @@ namespace SEAautomation
        public static void AddNewFamilyCode()
        {
            Elements.Delay(5000);
-           Elements.ClickElementByXPath("/html/body/sea-app/offer-landing/tabs/tab[6]/div/family-code-manager/div/div[2]/div/a");
+           Elements.ClickElementByXPath("/html/body/sea-app/offer-landing/tabs/tab[5]/div/family-code-manager/div/div[2]/div/a");
            Elements.Delay(5000);
        }
 
@@ -76,7 +76,7 @@ namespace SEAautomation
        public static bool IsSelectGSIPrefix()
        {
            var findTag = Driver.Instance.FindElements(By.TagName("button"));
-           var a = findTag[21].Text;
+           var a = findTag[31].Text;
            Console.WriteLine(a);
            return a == "000000000000";
        }
@@ -94,12 +94,12 @@ namespace SEAautomation
            Elements.SendKeysByXPath("/html/body/bs-modal[2]/div/div/bs-modal-body/div/form/div/div[1]/input", familyCode);
        }
 
-       public static bool IsFamilyCode()
+       public static bool IsFamilyCode(string a)
        {
            IWebElement TargetElement = Driver.Instance.FindElement(By.XPath("/html/body/bs-modal[2]/div/div/bs-modal-body/div/form/div/div[1]/input"));
            string getValue = TargetElement.GetAttribute("value");
            Console.WriteLine(getValue);
-           return getValue == "003"; // texto que debe mostrar
+           return getValue == a; // texto que debe mostrar
        }
 
        public static void Description(string description)
@@ -127,6 +127,11 @@ namespace SEAautomation
        {
            Elements.Delay(3000);
            Elements.ClickElementByXPath("/html/body/sea-app/offer-landing/tabs/tab[6]/div/family-code-manager/div/div[3]/div/table/tbody/tr[5]/td[2]/a");
+       }
+
+       public static bool DisabledButtonOk()
+       {
+           return Elements.ElementEnabledByXPath("/html/body/bs-modal[2]/div/div/bs-modal-footer/div/div/button[2]");
        }
     }
 }

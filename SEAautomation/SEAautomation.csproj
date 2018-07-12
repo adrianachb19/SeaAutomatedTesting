@@ -55,6 +55,7 @@
     <Compile Include="GenerateBarcode.cs" />
     <Compile Include="InvoiceSearch.cs" />
     <Compile Include="ManageFamilyCode.cs" />
+    <Compile Include="ManageGS1Prefix.cs" />
     <Compile Include="ManageOffers.cs" />
     <Compile Include="MarketingInformation.cs" />
     <Compile Include="NavigateTabs.cs" />

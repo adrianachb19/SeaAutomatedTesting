@@ -65,6 +65,7 @@
     <Compile Include="InvoiceSearchTest.cs" />
     <Compile Include="AddNewOfferTest.cs" />
     <Compile Include="ManageFamilyCodeTest.cs" />
+    <Compile Include="ManagePS1Prefix_Test.cs" />
     <Compile Include="ManageTest.cs" />
     <Compile Include="MarketingTest.cs" />
     <Compile Include="OfferSearchTest.cs" />

@@ -207,22 +207,22 @@ namespace SeaCoupon
 
         // metodo para verificar que un input este correcto (assert)
 
-        public static bool ElementInputXPath()
+        public static bool ElementInputXPath(string b)
         {
             IWebElement TargetElement = Driver.Instance.FindElement(By.XPath("xPath"));
             string getValue = TargetElement.GetAttribute("value");
             Console.WriteLine(getValue);
-            return getValue == "EDITED"; // texto que debe mostrar
+            return getValue == b; // texto que debe mostrar
         }
 
         // metodo para verificar que un button este correcto (assert)
 
-        public static bool ElementButtonXPath()
+        public static bool ElementButtonXPath(string b)
         {
             var findTag = Driver.Instance.FindElements(By.TagName("button"));
             var a = findTag[21].Text; // la colocar el numero donde se encuentra el button
             Console.WriteLine(a);
-            return a == "000000000000"; // texto que me debe retornar
+            return a == b; // texto que me debe retornar
         }
 
 

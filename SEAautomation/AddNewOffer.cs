@@ -109,7 +109,7 @@ namespace SEAautomation
             Elements.SendKeysByXPath("/html/body/sea-app/offer-create/div/main-offer-form/form/div[3]/div[3]/div/input", "15.00");
             Elements.ClickElementByXPath("/html/body/sea-app/offer-create/div/main-offer-form/form/div[5]");
             Elements.Delay(3000);
-            Elements.ClickElementByXPath("/html/body/bs-modal[4]/div/div/bs-modal-footer/div/div/a[2]");
+            Elements.ClickElementByXPath("/html/body/bs-modal[5]/div/div/bs-modal-footer/div/div/a[2]");
             
         }
 
@@ -127,7 +127,7 @@ namespace SEAautomation
             Elements.SendKeysByXPath("/html/body/sea-app/offer-create/div/main-offer-form/form/div[3]/div[4]/div/input", "30.00");
             Elements.ClickElementByXPath("/html/body/sea-app/offer-create/div/main-offer-form/form/div[5]");
             Elements.Delay(3000);
-            Elements.ClickElementByXPath("/html/body/bs-modal[5]/div/div/bs-modal-footer/div/div/a[2]");
+            Elements.ClickElementByXPath("/html/body/bs-modal[6]/div/div/bs-modal-footer/div/div/a[2]");
 
         }
 
@@ -144,7 +144,7 @@ namespace SEAautomation
             Elements.SendKeysByXPath("/html/body/sea-app/offer-create/div/main-offer-form/form/div[3]/div[6]/input", "01");
             Elements.ClickElementByXPath("/html/body/sea-app/offer-create/div/main-offer-form/form/div[5]");
             Elements.Delay(3000);
-            Elements.ClickElementByXPath("/html/body/bs-modal[6]/div/div/bs-modal-footer/div/div/a[2]");
+            Elements.ClickElementByXPath("/html/body/bs-modal[7]/div/div/bs-modal-footer/div/div/a[2]");
         }
 
         public static bool IsPurchaseRequirements()
@@ -156,13 +156,13 @@ namespace SEAautomation
         }
         public static void Date_Drop_Expiration()
         {
-            Elements.ClickElementByXPath("/html/body/sea-app/offer-create/div/main-offer-form/form/div[5]/div[1]/div");
+            Elements.ClickElementByXPath("/html/body/sea-app/offer-create/div/main-offer-form/form/div[5]/div[1]/div/my-date-picker/div/div/div/button/span");
             Elements.Delay(4000);
-            Elements.ClickElementByXPath("/html/body/sea-app/offer-create/div/main-offer-form/form/div[5]/div[1]/div/ng-datepicker/div/div/div[2]/div[2]/span[27]");
+            Elements.ClickElementByXPath("/html/body/sea-app/offer-create/div/main-offer-form/form/div[5]/div[1]/div/my-date-picker/div/div[2]/table[2]/tbody/tr[4]/td[4]/div/span");
             Elements.Delay(2000);
-            Elements.ClickElementByXPath("/html/body/sea-app/offer-create/div/main-offer-form/form/div[5]/div[2]/div");
+            Elements.ClickElementByXPath("/html/body/sea-app/offer-create/div/main-offer-form/form/div[5]/div[2]/div/my-date-picker/div/div/div/button/span");
             Elements.Delay(4000);
-            Elements.ClickElementByXPath("/html/body/sea-app/offer-create/div/main-offer-form/form/div[5]/div[2]/div/ng-datepicker/div/div/div[2]/div[2]/span[32]");
+            Elements.ClickElementByXPath("/html/body/sea-app/offer-create/div/main-offer-form/form/div[5]/div[2]/div/my-date-picker/div/div[2]/table[2]/tbody/tr[5]/td[6]/div/span");
             
             
         }
