@@ -17,7 +17,7 @@ namespace SEAtest
         {
             Driver.Initialize();
             LoginPage.GoTo();
-            LoginPage.LoginAs("achacon@example.com  ").WithPassword("123").Login();
+            LoginPage.LoginAs("achacon@pernixlabs.com").WithPassword("achacon123.").Login();
             
         }
 

@@ -16,6 +16,7 @@ namespace SEAautomation
         {
            var addOffer = Driver.Instance.FindElement(By.XPath("/html/body/sea-app/offer-landing/tabs/tab[1]/div/offer-search/div/div/div[3]/a"));
            addOffer.Click();
+            
         }
 
         public static bool IsAddNewOffer
